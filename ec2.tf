@@ -4,12 +4,12 @@ resource "aws_instance" "web" {
 
   monitoring = true
 
-  ebs_optimizes = true
+  ebs_optimized = true
 
-  root_block_device{
+  root_block_device {
     encrypted = true
   }
-  
+
   tags = {
     Name = "python-terraform"
   }
